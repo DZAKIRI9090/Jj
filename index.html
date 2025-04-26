@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Attack Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Minecraft Attack Panel</h1>
+        <form action="/start" method="post">
+            <input type="text" name="ipport" placeholder="IP:Port" required><br>
+            <input type="text" name="protocol" placeholder="Protocol (auto/1.8/1.16/etc)" required><br>
+            <input type="number" name="cps" placeholder="CPS (bot per second)" required><br>
+            <input type="number" name="duration" placeholder="Duration (seconds)" required><br>
+            <button type="submit">🚀 Start Attack</button>
+        </form>
+        <form action="/stop" method="post" style="margin-top: 10px;">
+            <button type="submit" class="stop">🛑 Stop Attack</button>
+        </form>
+    </div>
+</body>
+</html>
